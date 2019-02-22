@@ -9,7 +9,7 @@ let models = require('../models/scheduleModel');
 
 exports.buildSchedule = (function () {
     let maxWishes;
-    let sucesses;
+    let successes;
     let sugestions;
     let longest;
     let wishes;
@@ -17,7 +17,7 @@ exports.buildSchedule = (function () {
     function backtrack(curr = 0, preenchidos = new Set(), escolhidos = []) {
         if (curr == maxWishes) {
             if (escolhidos.length == maxWishes) {
-                sucesses.push(escolhidos);
+                successes.push(escolhidos);
             } else if (escolhidos.length == longest) {
                 sugestions.push(escolhidos);
             } else if (escolhidos.length > longest) {
@@ -62,17 +62,17 @@ exports.buildSchedule = (function () {
     function build(_wishes) {
         wishes = _wishes;
         maxWishes = _wishes.length;
-        sucesses = [];
+        successes = [];
         sugestions = []
         longest = 0;
 
         backtrack();
 
         if (DEBUGMODE) {
-            console.log(`${sucesses.length} perfect matches and ${sugestions.length} sugestions.`);
+            console.log(`${successes.length} perfect matches and ${sugestions.length} sugestions.`);
         }
 
-        return {"sucess": sucesses, "sugestions": sugestions};
+        return {"success": successes, "sugestions": sugestions};
     }
 
     return function (body) {
