@@ -1,0 +1,29 @@
+{
+  "name": "horarinatorapi",
+  "version": "1.0.0",
+  "description": "RESTful api para criar horarios com base no formato do .csv fornecido para a matricula de Computacao@UFCG.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmitre/horarinator-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Daniel Mitre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielmitre/horarinator-api/issues"
+  },
+  "homepage": "https://github.com/danielmitre/horarinator-api#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
