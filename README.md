@@ -36,7 +36,7 @@ Exemplo:
 
 #### Resposta:
 
-A resposta retorna um json com os campos **sucess** e **sugestions**, Ambos são arrays de horários válidos, sendo os horários representados como arrays de disciplinas com os campos **nome**, **categoria**, **periodo** e **turmas** (apesar do nome, terá apenas uma turma em cada horário).
+A resposta retorna um json com os campos **sucess** e **sugestions**, Ambos são arrays de horários válidos, sendo os horários representados como arrays de disciplinas com os campos **nome**, **categoria**, **periodo** e **turmas** (apesar do nome, terá apenas uma turma em cada disciplina do horário).
 
 Exemplo:
 ```
